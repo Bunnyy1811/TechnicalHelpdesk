@@ -1,0 +1,119 @@
+{%extends "employee/base_employee.html"%}
+{%block content2%}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<link rel="stylesheet" href="/static/formcss/style.css">
+
+
+<style>
+
+select{
+  border: 2px solid #ccc;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  font-family: "Muli-Bold";
+  font-size: 12px;
+  cursor: pointer;
+ background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right 000;
+ background-position: 95% 50%;
+}
+input[type="text"]{font-size: 14px;}
+input[type="password"]{font-size: 14px;}
+
+.form-control:focus {
+    border: 1px solid #ae3c33; }
+}
+.form-control {
+  border: 2px solid #ccc;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 20px 20px;
+  border-radius: 20px;
+  font-family: "Muli-Bold";
+  background: none; }
+  .form-control:focus {
+    border: 1px solid #ae3c33; }
+
+.owl-dots{
+  position: absolute;
+  top:10px;
+  left:50%;
+  right:25%;
+  transform-origin:10px 60px;
+  transform: rotate(270deg);
+}
+</style>
+
+<div class="wrapper js-animsition"
+     data-animsition-out-class="fade-out"
+     style="background-image: url(/static/images/hero_3.jpg); z-index:0; padding-bottom:5%">
+
+    <div class="templateux-section">
+    <div class="container">
+        <div class="row justify-content-center" >
+            <div class="col-md-8 testimonial-wrap" style="background-image: url(/static/images/texture3.jpg);
+                left:5%; margin:auto; top:25%; box-shadow: 5px 5px 15px grey;border-radius: 25px;">
+                <div class="quote">“</div>
+                <div class="owl-carousel wide-slider-testimonial owl-loaded owl-drag" >
+
+                    <div class="owl-stage-outer" >
+                         <div class="owl-stage"
+                             style="transform: translate3d(900px, 100px, 500px);  transition: all 0s ease 0s; width: 3150px;">
+                            <div class="owl-item cloned" style="width: 450px;">
+                                <div class="item">
+                                    <blockquote class="block-testomonial">
+                                        <p>"{{feedback[0]['message']}}"</p>
+                                        <h5 style="text-align:right">-Customer</h5>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 450px;">
+                                <div class="item">
+                                    <blockquote class="block-testomonial">
+                                        <p>"{{feedback[1]['message']}}"</p>
+                                        <h5 style="text-align:right">-Customer</h5>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 450px;">
+                                <div class="item">
+                                    <blockquote class="block-testomonial">
+                                        <p>"{{feedback[2]['message']}}"</p>
+                                        <h5 style="text-align:right">-Customer</h5>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 450px;">
+                                <div class="item">
+                                    <blockquote class="block-testomonial">
+                                        <p>"{{feedback[3]['message']}}"</p>
+                                        <h5 style="text-align:right">-Customer</h5>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 450px;">
+                                <div class="item">
+                                    <blockquote class="block-testomonial">
+                                        <p>"{{feedback[4]['message']}}"</p>
+                                        <h5 style="text-align:right">-Customer</h5>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+{%endblock%}
